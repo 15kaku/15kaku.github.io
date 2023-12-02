@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"B4A11手繪lady_atlas_1", frames: [[0,0,623,434],[625,0,623,434],[1432,0,278,280],[1712,233,153,408],[1250,0,180,465],[1432,282,192,322],[314,436,231,138],[1712,0,299,231],[0,436,312,103],[1626,282,54,128]]}
+		{name:"B4A11手繪lady_atlas_1", frames: [[0,0,623,434],[625,0,623,434],[1432,0,278,280],[1712,0,278,280],[1733,282,153,408],[1250,0,180,465],[0,436,192,322],[508,436,231,138],[1432,282,299,231],[194,436,312,103],[1992,0,54,128]]}
 ];
 
 
@@ -27,72 +27,79 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_10 = function() {
+(lib.CachedBmp_11 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["B4A11手繪lady_atlas_1"]);
 	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_1 = function() {
+	this.initialize(ss["B4A11手繪lady_atlas_1"]);
+	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -491,22 +498,24 @@ if (reversed == null) { reversed = false; }
 	// lady02
 	this.instance_17 = new lib.CachedBmp_8();
 	this.instance_17.setTransform(195.3,77.3,0.5,0.5);
-	this.instance_17._off = true;
 
-	var maskedShapeInstanceList = [this.instance_17];
+	this.instance_18 = new lib.CachedBmp_9();
+	this.instance_18.setTransform(195.3,77.3,0.5,0.5);
+
+	var maskedShapeInstanceList = [this.instance_17,this.instance_18];
 
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask_9;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(26).to({_off:false},0).to({_off:true},15).wait(72));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_17}]},26).to({state:[{t:this.instance_18}]},15).wait(72));
 
 	// 筆01
-	this.instance_18 = new lib.手握筆();
-	this.instance_18.setTransform(53.45,404.85,0.1967,0.2498,0,0,0,24.7,397.9);
-	this.instance_18._off = true;
+	this.instance_19 = new lib.手握筆();
+	this.instance_19.setTransform(53.45,404.85,0.1967,0.2498,0,0,0,24.7,397.9);
+	this.instance_19._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(1).to({_off:false},0).wait(1).to({x:46.7,y:385.95},0).wait(1).to({y:358.95},0).wait(1).to({x:54.8,y:333.3},0).wait(1).to({x:75.05,y:317.1},0).wait(1).to({x:99.35,y:310.35},0).wait(1).to({x:118.25,y:311.7},0).wait(1).to({x:134.45,y:318.45},0).wait(1).to({x:154.7,y:331.95},0).wait(1).to({x:169.55,y:350.85},0).wait(1).to({x:184.4,y:369.75},0).wait(1).to({x:196.55,y:385.95},0).wait(1).to({x:211.4,y:407.55},0).wait(1).to({x:226.1,y:427.85},0).wait(1).to({x:241.5,y:448.85},0).wait(1).to({x:258.3,y:469.15},0).wait(1).to({x:275.8,y:485.95},0).wait(1).to({x:323.4,y:520.25},0).wait(1).to({x:345.8},0).wait(1).to({x:351.4,y:499.25},0).wait(1).to({x:341.6,y:480.35},0).wait(1).to({x:328.3,y:460.05},0).wait(1).to({x:315,y:444.65},0).wait(1).to({x:308,y:436.25},0).to({_off:true},2).wait(87));
+	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(1).to({_off:false},0).wait(1).to({x:46.7,y:385.95},0).wait(1).to({y:358.95},0).wait(1).to({x:54.8,y:333.3},0).wait(1).to({x:75.05,y:317.1},0).wait(1).to({x:99.35,y:310.35},0).wait(1).to({x:118.25,y:311.7},0).wait(1).to({x:134.45,y:318.45},0).wait(1).to({x:154.7,y:331.95},0).wait(1).to({x:169.55,y:350.85},0).wait(1).to({x:184.4,y:369.75},0).wait(1).to({x:196.55,y:385.95},0).wait(1).to({x:211.4,y:407.55},0).wait(1).to({x:226.1,y:427.85},0).wait(1).to({x:241.5,y:448.85},0).wait(1).to({x:258.3,y:469.15},0).wait(1).to({x:275.8,y:485.95},0).wait(1).to({x:323.4,y:520.25},0).wait(1).to({x:345.8},0).wait(1).to({x:351.4,y:499.25},0).wait(1).to({x:341.6,y:480.35},0).wait(1).to({x:328.3,y:460.05},0).wait(1).to({x:315,y:444.65},0).wait(1).to({x:308,y:436.25},0).to({_off:true},2).wait(87));
 
 	// 遮色片 (mask)
 	var mask_10 = new cjs.Shape();
@@ -539,19 +548,19 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(mask_10).to({graphics:null,x:0,y:0}).wait(1).to({graphics:mask_10_graphics_1,x:89.4314,y:200.2935}).wait(1).to({graphics:mask_10_graphics_2,x:85.3932,y:189.599}).wait(1).to({graphics:mask_10_graphics_3,x:82.7685,y:177.5963}).wait(1).to({graphics:mask_10_graphics_4,x:82.7685,y:164.24}).wait(1).to({graphics:mask_10_graphics_5,x:82.7714,y:152.8807}).wait(1).to({graphics:mask_10_graphics_6,x:94.3042,y:146.26}).wait(1).to({graphics:mask_10_graphics_7,x:104.7672,y:144.8563}).wait(1).to({graphics:mask_10_graphics_8,x:113.4159,y:144.8563}).wait(1).to({graphics:mask_10_graphics_9,x:124.1567,y:144.8563}).wait(1).to({graphics:mask_10_graphics_10,x:132.1047,y:144.8563}).wait(1).to({graphics:mask_10_graphics_11,x:140.1261,y:144.8563}).wait(1).to({graphics:mask_10_graphics_12,x:145.512,y:144.8563}).wait(1).to({graphics:mask_10_graphics_13,x:153.5215,y:144.8563}).wait(1).to({graphics:mask_10_graphics_14,x:160.8319,y:144.8563}).wait(1).to({graphics:mask_10_graphics_15,x:168.1422,y:154.6629}).wait(1).to({graphics:mask_10_graphics_16,x:176.2122,y:165.493}).wait(1).to({graphics:mask_10_graphics_17,x:195.0927,y:185.0272}).wait(1).to({graphics:mask_10_graphics_18,x:206.9473,y:193.1022}).wait(1).to({graphics:mask_10_graphics_19,x:218.1478,y:197.659}).wait(1).to({graphics:mask_10_graphics_20,x:229.7124,y:197.659}).wait(1).to({graphics:mask_10_graphics_21,x:229.7124,y:197.659}).wait(1).to({graphics:mask_10_graphics_22,x:229.7124,y:197.659}).wait(1).to({graphics:mask_10_graphics_23,x:229.7124,y:197.659}).wait(1).to({graphics:mask_10_graphics_24,x:229.7124,y:197.659}).wait(2).to({graphics:null,x:0,y:0}).wait(87));
 
 	// lady01
-	this.instance_19 = new lib.CachedBmp_9();
-	this.instance_19.setTransform(69.35,88.6,0.5,0.5);
-
 	this.instance_20 = new lib.CachedBmp_10();
 	this.instance_20.setTransform(69.35,88.6,0.5,0.5);
 
-	var maskedShapeInstanceList = [this.instance_19,this.instance_20];
+	this.instance_21 = new lib.CachedBmp_11();
+	this.instance_21.setTransform(69.35,88.6,0.5,0.5);
+
+	var maskedShapeInstanceList = [this.instance_20,this.instance_21];
 
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask_10;
 	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_19}]}).to({state:[{t:this.instance_20}]},39).wait(74));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_20}]}).to({state:[{t:this.instance_21}]},39).wait(74));
 
 	this._renderFirstFrame();
 
@@ -566,8 +575,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/圖層3.png?1701516885437", id:"圖層3"},
-		{src:"images/B4A11手繪lady_atlas_1.png?1701516885408", id:"B4A11手繪lady_atlas_1"}
+		{src:"images/圖層3.png", id:"圖層3"},
+		{src:"images/B4A11手繪lady_atlas_1.png", id:"B4A11手繪lady_atlas_1"}
 	],
 	preloads: []
 };
